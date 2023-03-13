@@ -16,8 +16,8 @@ export default function HeaderInfo() {
                 <div class="row align-items-start">
                     <h5 class="col col-xl-4">Мы есть:</h5>
                     <Nav class="col col-xl-4">
-                        <a style={{marginRight: 10}} class="col" href="https://vk.com/id450767708"><img style={{height: 20}} src={vkLogo} alt="VK"/></a>
-                        <a style={{marginRight: 10}} class="col"href="https://vk.com/id450767708"><img style={{height: 20}} src={tgLogo} alt="TG"/></a>
+                        <a style={{marginRight: 10}} href="https://vk.com/id450767708"><img style={{height: 20}} src={vkLogo} alt="VK"/></a>
+                        <a style={{marginRight: 10}} href="https://vk.com/id450767708"><img style={{height: 20}} src={tgLogo} alt="TG"/></a>
                     </Nav>
                     
                 </div>

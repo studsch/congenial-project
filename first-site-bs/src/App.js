@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import NaviBar from './Components/Navibar';
-import HeaderInfo from './Components/Headerinfo';
+import NaviBar from './Pages/Components/Navibar';
+import HeaderInfo from './Pages/Components/Headerinfo';
+import {Home} from './Pages/Home'
 import {
     BrowserRouter as Router,
     Routes,
@@ -12,14 +13,18 @@ import {
     useParams,
   } from 'react-router-dom';
 
-import {Home} from "./Pages/Home"
 
 function App() {
   return (
     <>
-    <HeaderInfo/>
+        <HeaderInfo/>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+            </Routes>
+        </Router>
 
-    <NaviBar/>
+
     </>
 
   );
