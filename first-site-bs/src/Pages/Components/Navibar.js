@@ -8,9 +8,9 @@ export default function NaviBar() {
     const onMouseOut = () => {setToggleOpen(false)}
     return (
     <>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar onMouseOver={onMouseOver} onMouseOut={onMouseOut} collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Brand>Фасад строй</Navbar.Brand>
-            <Navbar.Toggle type="button" onMouseOver={onMouseOver} onMouseOut={onMouseOut} aria-controls="reosponsive-navbar-nav"/>
+            <Navbar.Toggle type="button"  aria-controls="reosponsive-navbar-nav"/>
             <Navbar.Collapse className={toggleOpen ? 'show' : 'hide'}>
                 <Nav className="mr-auto">
                     <Nav.Link>Home</Nav.Link>
